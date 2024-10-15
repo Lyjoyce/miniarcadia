@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="env_travail/workspace/miniarcadia/index.html">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/habitats.css">
+  <link rel="stylesheet" href="../pages.html/contact.html">
+  <link rel="stylesheet" href="../css/gallery.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <title>Miniarcadia_les habitats</title>
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="topnav">
+      <img src="../img/logo-zoo-arcadia/logo-max-arcadia.png" alt="logo arcadia" class="navlogo">
+      <a href="/env_travail/workspace/miniarcadia/index.html" class="active">Home
+        <img src="../img/icon/arrow-left-solid.svg" alt="arrow-left-solid" class="arrowleft">
+      </a>
+      <a href="#notice">Avis</a>
+      <a href="./view/pages.html/contact.html">Contact</a>
+      <a href="./view/pages.html/login.html" class="split">Login</a>
+    </nav>
+    <div class="presentation">
+
+      <div>
+        <h1> Les habitats </h1>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN (Center website) -->
+  <main class="main">
+
+    <h1>Les habitats</h1>
+
+
+    <h2>PORTFOLIO</h2>
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('jungle')"> Jungle</button>
+      <button class="btn" onclick="filterSelection('marais')"> Marais</button>
+      <button class="btn" onclick="filterSelection('savane')"> Savane</button>
+    </div>
+
+    <div class="row">
+      <div class="habitat-column jungle">
+        <div class="content">
+          <img src="../img/jungle/jungle-ours-alexandru-bogdan-ghita-ErfqBlV3AEo-unsplash.jpg" alt="Mountains"
+            style="width:100%">
+          <h4>Mountains</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="habitat-column jungle">
+        <div class="content">
+          <img src="../img/jungle/jungle-pandageant-lukas-w-e3mu-MTj7Xk-unsplash.jpg" alt="Mountains"
+            style="width:100%">
+          <h4>Mountains</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="habitat-column jungle">
+        <div class="content">
+          <img src="../img/jungle/jungle-pandaroux-4patte-anna-roberts-Yq8EFrJ4CS8-unsplash.jpg" alt="Lights"
+            style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="habitat-column jungle">
+        <div class="content">
+          <img src="../img/jungle/jungle-tiger-poste-frida-lannerstrom-IDO_a-dxrCY-unsplash.jpg" alt="jungle"
+            style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+
+      <div class="habitat-column marais">
+        <div class="content">
+          <img src="/w3images/marais1.jpg" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="habitat-column marais">
+        <div class="content">
+          <img src="/w3images/marais1.jpg" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="habitat-column marais">
+        <div class="content">
+          <img src="/w3images/marais2.jpg" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="habitat-column marais">
+        <div class="content">
+          <img src="/w3images/marais3.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+
+      <div class="habitat-column savane">
+        <div class="content">
+          <img src="/w3images/savane1.jpg" alt="savane" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="habitat-column savane">
+        <div class="content">
+          <img src="/w3images/savane1.jpg" alt="savane" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="habitat-column savane">
+        <div class="content">
+          <img src="/w3images/savane2.jpg" alt="savane" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="habitat-column savane">
+        <div class="content">
+          <img src="/w3images/savane3.jpg" alt="savane" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+  </main>
+  <!-- END MAIN -->
+  <!--THE FOOTER-->
+
+
+
+  <footer class="footer">
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myPlanBtn">Plan</button>
+
+    <!-- The Modal -->
+    <div id="myPlanModal" class="plan_modal">
+
+      <!-- Modal content-->
+      <div class="plan-modal-content">
+        <span class="planclose">&times;</span>
+        <img src="assets/images/zoo-arcadia/Zoo_Arcadia_Forêtde_Broceliande.png" alt="map">
+      </div>
+
+    </div>
+
+    <!--commentaireTrigger/Open The Modal -->
+    <button id="myHorairesBtn">Horaires</button>
+
+    <a href="https://www.instagram.com/mini_arcadia" class="footer-links">Nous retouver sur Instagram</a>
+
+    <!--JS FETCH
+       <p id="copyright">Fetch a file to change this text.</p>-->
+    <a href="" class="footer-links">Copyright</a>
+
+  </footer>
+
+
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("habitat-column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+</body>
+
+</html>

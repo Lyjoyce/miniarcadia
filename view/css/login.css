@@ -1,7 +1,7 @@
 /*LOGIN FORM*/
 
 .log-body{
-  background-color: #65786C;
+  background-color: whitesmoke;
   font-family: "Roboto Flex", "Montserrat", sans-serif;
   font-size: larger;
 }
@@ -15,7 +15,7 @@
 }
 /* Style inputs */
 
-input[type=text], input[type=password], textarea {
+input[type=text], input[type=email], input[type=password], textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -26,7 +26,7 @@ input[type=text], input[type=password], textarea {
  }
  /* Style the login button */
   .loginbtn{
-  background-color: #54F790;
+  background-color: #fc736d;
   color: black;
   padding: 14px 20px;
   margin: 8px 0;
@@ -65,7 +65,7 @@ input[type=text], input[type=password], textarea {
   .modal-content {
     background-color: #6DA281;
     margin: 5px auto; /* 15% from the top and centered */
-    border: 1px solid #65786C;
+    border: 1px solid #3d4d43;
     width: 80%; /* Could be more or less, depending on screen size */
   }
   

@@ -3,12 +3,6 @@
     box-sizing: border-box;
   }
   
-  body {
-    /*background-color: #F1F1F1;*/
-    padding: 20px;
-    font-family:'Roboto Flex, Montserrat, sans serif';
-  }
-  
   /* Center website */
   .main {
     max-width: 1000px;

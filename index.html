@@ -1,15 +1,276 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miniarcadia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../miniarcadia/view/css/index.css">
+  <link rel="stylesheet" href="./view/pages.html/contact.html">
+  <link rel="stylesheet" href="./view/css/gallery.css">
+  <link rel="stylesheet" href="./view/css/login.css">
+  <link rel="stylesheet" href="./view/css/footer.css">
+  <title>Miniarcadia</title>
 </head>
+
 <body>
-    
-    <header></header>
-    <main></main>
-    <footer></footer>
-    
+
+  <header>
+    <nav class="topnav">
+      <img src="./asset/images/logo-arcadia/logo-max-arcadia.png" alt="logo arcadia" class="navlogo">
+      <a href="#home" class="active">Home</a>
+      <a href="#notice">Avis</a>
+      <a href="./view/pages.html/contact.html">Contact</a>
+      <a href="./view/pages.html/login.html" class="split">Login</a>
+    </nav>
+
+    <div class="presentation">
+      <div>
+        <h1> BIENVENUE AU ZOO ARCADIA </h1>
+        <h2>Entrez au coeur de la forêt de Brocelian et profitez de la diversité
+          de la vie animale tout en contribuant à la préservation de la faune sauvage.
+        </h2>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <!--MDN SECTION GALLERY PICTURES-->
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('animaux')"> Nos animaux</button>
+      <button class="btn" onclick="filterSelection('habitats')"> Les habitats</button>
+      <button class="btn" onclick="filterSelection('services')"> Nos services</button>
+    </div>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+
+      <div class="column habitats">
+        <div class="content">
+          <!-- MODELE MDN https://developer.mozilla.org/fr/docs/Web/HTML/Element/img
+             <img
+              class="fit-picture"
+              src="/media/cc0-images/grapefruit-slice-332-332.jpg"
+              alt="Grapefruit slice atop a pile of other slices" />
+            -->
+          <img class="img-gal" src="./view/img/habitats/marais-habitat-jevgenij-voronov-YL5ZDmdDNEY-unsplash.jpg"
+            alt="le marais">
+          <h4><a href="./view/pages.html/habitats.html" class="link-hab">Marais</a></h4>
+          <p>Animaux : Crocodile, Cygne, Flamant rose, Hippopotame
+          </p>
+        </div>
+      </div>
+      <div class="column habitats">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/habitats/savane-vansep-awan-xuRE8JcuzKk-unsplash.jpg"
+            alt="la savane" />
+          <h4><a href="./view/html/savane.html" class="link-hab">Savane</a></h4>
+          <p>
+            Animaux : Girafes, Guépards, Lions, Rhinocéros</p>
+        </div>
+      </div>
+      <div class="column habitats">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/habitats/jungle-habitat.jpg" alt="la jungle" />
+          <h4><a href="./asset/images/habitats/jungle-habitat.jpg" class="link-hab">Jungle</a></h4>
+          <p>
+            Animaux : Ours brun, Panda géant, Panda roux, Tigre jaune
+          </p>
+        </div>
+      </div>
+
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/marais/marais-flamant_mange.jpg" alt="marais-flamant_mange" />
+          <h4>Flamant rose</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/savane/savane-giraferouge-kelly-arnold-dzlBhm_ohXs-unsplash.jpg"
+            alt="girafe" />
+          <h4>Girafe</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/jungle/jungle-ours-alexandru-bogdan-ghita-ErfqBlV3AEo-unsplash.jpg"
+            alt="ours brun" />
+          <h4>Ours brun</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/marais/marais-cygne-nick-fewings-LdIEDdBhBoY-unsplash.jpg"
+            alt="cygne blanc" />
+          <h4>Cygne blanc</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/savane/savane-guepard-jean-wimmerlin-U66avewmxJk-unsplash.jpg "
+            alt="guepard" />
+          <h4>Guépard</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/jungle/jungle-tigreraye-nick-karvounis--KNNQqX9rqY-unsplash.jpg"
+            alt="tigre raye jaune" />
+
+          <h4>Tigre jaune</h4>
+          <p> </p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/marais/marais-hippopotame-jonathan-gohner-qxVxn-Mp8f4-unsplash.jpg"
+            alt="hippopotame dans un marais" />
+          <h4>Hippopotame</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/savane/savane-liontete-photo-person-wXmkcvIOOXI-unsplash.jpg "
+            alt="lion dans la savane" />
+          <h4>Lion</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/jungle/jungle-pandageant-lukas-w-e3mu-MTj7Xk-unsplash.jpg"
+            alt="panda geant" />
+          <h4>Panda géant</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/marais/crocodile-glen-carrie-RIQjCqmcGNw-unsplash.jpg"
+            alt="crocodile" />
+          <h4>Crocodile</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/savane/savane-rhinoceros-jacob-brogdon-nqJqiVzFOp8-unsplash.jpg "
+            alt="rhinoceros dans la savane" />
+          <h4>Rhinocéros</h4>
+          <p> </p>
+        </div>
+      </div>
+      <div class="column animaux">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/jungle/jungle-pandaroux-4patte-anna-roberts-Yq8EFrJ4CS8-unsplash.jpg"
+            alt="pandaroux dans la jungle" />
+          <h4>Panda roux</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="column services">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/services/restauzoo-reno-laithienne-es-8zmpSp-c-unsplash.jpg"
+            alt="restaurant du zoo" />
+          <h4 id="restaurant">Restaurant</h4>
+          <p>'Au plaisir du zoo Arcadia' vous accueille pour un déjeuner dans un
+            cadre et une ambiance agréables et conviviaux, avec des prix abordables
+            pour les familles.
+            Les clients louent la vaste sélection de bières belges
+            et la qualité des frites.
+            Le restaurant est apprécié pour sa variété de thé et ses pâtisseries faites maison.
+            Des macarons délicats aux éclairs au chocolat,
+            chaque visite est une découverte gourmande.
+          </p>
+        </div>
+      </div>
+      <div class="column services">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/services/visitezoo-lital-levy-KjzEfLVxIh4-unsplash.jpg"
+            alt="visite guidee gratuite dans le zoo" />
+          <h4 id="visiteGuidee">Visite guidée</h4>
+          <p> Gratuit.
+            Laissez-vous guider à travers une belle promenade dans notre zoo Arcadia.
+            Nous marcherons ensemble dans les allées ombragées du zoo,
+            prêts à découvrir une variété fascinante d'animaux sauvages.
+            Vous apprécierez de découvrir ces incroyables animaux originaires
+            des différents continents à travers mes descriptions. N'hésitez pas à poser vos questions.
+          </p>
+        </div>
+      </div>
+
+      <div class="column services">
+        <div class="content">
+          <img class="img-gal" src="./asset/images/services/ptit-train-denis-chick-mHqIs22M2Kw-unsplash.jpg"
+            alt="visiter le zoo en petit train" />
+          <h4 id="petitTrain">Petit train</h4>
+          <p>
+            Une option idéale pour découvrir
+            le parc de manière confortable et ludique, appréciée des familles. Le petit train parcourt les différentes
+            sections du zoo,
+            offrant aux visiteurs une vue d'ensemble des habitats et des animaux, sans se fatiguer.
+            Pendant la visite, des commentaires informatifs sont diffusés pour en apprendre davantage
+            sur les espèces présentes et les efforts de conservation du zoo.
+          </p>
+        </div>
+      </div>
+      <!-- END GRID, END GALLERY-->
+    </div>
+    <!-- END MAIN -->
+  </main>
+  
+  <!--THE FOOTER-->
+  <footer>
+    <!-- Trigger/Open The Modal -->
+    <button id="myPlanBtn">Plan</button>
+    <!-- The Modal -->
+    <div id="myPlanModal" class="plan_modal">
+      <!-- Modal content-->
+      <div class="plan-modal-content">
+        <span class="planclose">&times;</span>
+        <img src="assets/images/zoo-arcadia/Zoo_Arcadia_Forêtde_Broceliande.png" alt="map">
+      </div>
+    </div>
+    <!--commentaireTrigger/Open The Modal -->
+    <button id="myHorairesBtn">Horaires</button>
+
+    <a href="https://www.instagram.com/mini_arcadia" class="footer-links">Nous retouver sur Instagram</a>
+    <!--JS FETCH
+    <p id="copyright">Fetch a file to change this text.</p>-->
+    <a href="" class="footer-links">Copyright</a>
+
+  </footer>
+
+  <script src="./view/script.js/index.js"></script>
+  <script src="./view/script.js/index_login.js"></script>
+  <script src="./vieuw/script.js/contact.js"></script>
+  <script src="./view/script.js/notice.js"></script>
+  <script src="./view/script.js/footer.js"></script>
+  <script src="./view/script.js/plan.js"></script>
+  <script src="./view/script.js/horaires.js"></script>
+
+  // When the user scrolls the page, execute myFunction
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+
 </body>
+
 </html>

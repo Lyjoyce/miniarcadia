@@ -14,7 +14,7 @@
 
 /* page*/
 .body-form{
-  background-color: #65786C;
+  background-color: #6da281;
 }
 .arrowleft{
   width: 25px;
@@ -41,7 +41,7 @@
    padding: 12px 20px;
    margin: 8px 0;
    display: inline-block;
-   border: 1px solid #ddd;
+   border: 1px solid #3d4d43;
    border-radius: 4px;
    box-sizing: border-box;
   }
