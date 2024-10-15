@@ -1,0 +1,98 @@
+/*LOGIN FORM*/
+
+.log-body{
+  background-color: #65786C;
+  font-family: "Roboto Flex", "Montserrat", sans-serif;
+  font-size: larger;
+}
+.arrowleft{
+  width: 25px;
+}
+/*style title*/
+.presentation{
+  display: flex;
+  justify-content: center;
+}
+/* Style inputs */
+
+input[type=text], input[type=password], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #094920;
+  border-radius: 4px;
+  box-sizing: border-box;
+ }
+ /* Style the login button */
+  .loginbtn{
+  background-color: #54F790;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ .container{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+ }
+.cancelbtn{
+  border-radius: 4px;
+  border: solid #094920 1px;
+  padding: 3px;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #6DA281;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #65786C;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    animation: animatezoom 0.6s
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }

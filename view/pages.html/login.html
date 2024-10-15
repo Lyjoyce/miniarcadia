@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <title>login</title>
+</head>
+
+<body class="log-body">
+
+  <header>
+    <nav class="topnav">
+      <img src="../img/logo-zoo-arcadia/logo-max-arcadia.png" alt="logo arcadia" class="navlogo">
+      <a href="/env_travail/workspace/miniarcadia/index.html" class="active">Home
+        <img src="../img/icon/arrow-left-solid.svg" alt="arrow-left-solid" class="arrowleft">
+      </a>
+      <a href="#notice">Avis</a>
+      <a href="./view/pages.html/contact.html">Contact</a>
+      <a href="./view/pages.html/login.html" class="split">Login</a>
+    </nav>
+    <div class="presentation">
+      <div>
+        <h1>Me connecter</h1>
+        <h2>Bonne journée</h2>
+      </div>
+    </div>
+  </header>
+
+  <form action="action_page.php" method="post">
+
+
+    <div class="modal-content">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="loginbtn">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+</body>

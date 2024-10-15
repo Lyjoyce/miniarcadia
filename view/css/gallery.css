@@ -1,0 +1,125 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /*background-color: #F1F1F1;*/
+    padding: 20px;
+    font-family:'Roboto Flex, Montserrat, sans serif';
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h3 {
+    font-size: 25px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+    background-color: #094920;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  .img-gal{
+    width: 100%;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #6DA281;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #094920;
+    color: white;
+  }
+  
+  .btn.active {
+    background-color: #094920;
+    color: white;
+  }
+
+  /*style the links h4*/
+
+  .link-hab{
+    color: #094920;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+   h4:hover{
+   text-decoration :overline #54F790 4px;
+  }
+
+  @media screen and (max-width: 500px){
+
+    .row,
+  .row > .column {
+    padding: 4px;
+  }
+    .row{
+      font-size: small;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+
+    .row,
+  .row > .column {
+    padding: 2px;
+  }
+    .row{
+      font-size: x-small;
+    }
+  }
+  @media screen and (max-width: 270px){
+
+    .row,
+  .row > .column {
+    padding: 1px;
+  }
+    .row{
+      font-size: xx-small;
+    }
+  }
+  
+  

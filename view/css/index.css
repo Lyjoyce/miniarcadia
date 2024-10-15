@@ -1,0 +1,90 @@
+
+
+/* Create a top navigation bar with a green background color  */
+.topnav {
+  background-color: #094920;
+  overflow: hidden;
+  box-shadow: inset 0px -2px 0px #54F790;
+  border-radius: 4px;
+  width: 100%;
+}
+.navlogo{
+  width: 100px;
+  border-radius: 4px;
+  border: solid #094920 1px;
+  margin-left: 25%;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #54F790;
+  color: black;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #54F790;
+  color: black;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  color: white;
+}
+.topnav a.split:hover{
+  background-color: #65786C;
+  color: black;
+}
+
+.logo{
+  width: 20%;
+}
+/* Style the topnav with a background and some padding */
+.nav {
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Style Phrase d'accroche et de présentation*/
+.presentation{
+  display: flex;
+  align-items: center;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #3D4D43;
+  box-shadow: 2px 4px #094920;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+
+  .logo{
+    width: 30%;
+  }
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
