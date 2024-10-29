@@ -1,15 +1,89 @@
+/*.spinner {
+  height: 100%;
+  background: #094920;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  animation: spinner 2s linear;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoSpinner{
+  display: flex;
 
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: slide-down;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+@keyframes spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes slide-down {
+  from {top: -200px; background-color: white;}
+  to {top: 0px;}
+}
+@keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+*/
 body{
   font-family:'Roboto Flex, Montserrat, sans serif';
-  background-color: azure;
+  background-color: #3D4D43;
+  color: white;
   padding: 20px;
 }
 
-/* Create a top navigation bar with a green background color  */
 .topnav {
   background-color: #094920;
   overflow: hidden;
-  box-shadow: inset 0px -2px 0px #54F790;
+  box-shadow: inset 2px 2px 0px 0px #54F790;
   border-radius: 4px;
   width: 100%;
 }
@@ -19,7 +93,6 @@ body{
   border: solid #094920 1px;
   margin-left: 25%;
 }
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: white;
@@ -30,20 +103,17 @@ body{
   line-height: 25px;
   border-radius: 4px;
 }
-
-/* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: #54F790;
   color: black;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
   background-color: #54F790;
   color: black;
 }
 
-/* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
   color: white;
@@ -53,11 +123,10 @@ body{
   text-decoration: overline 4px #FC736D;
   color: black;
 }
-
 .logo{
   width: 20%;
 }
-/* Style the topnav with a background and some padding */
+/* main GALLERY */
 .nav {
   overflow: hidden;
   background-color: white;
@@ -79,7 +148,7 @@ h1{
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #3D4D43;
-  box-shadow: 2px 4px #094920;
+  box-shadow: 2px 4px #54F790;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */

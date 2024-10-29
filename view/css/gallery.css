@@ -17,6 +17,7 @@
   .row {
     margin: 10px -16px;
     background-color: #094920;
+    color: white;
   }
   
   /* Add padding BETWEEN each column */
@@ -58,12 +59,12 @@
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: #6DA281;
+    background-color: azure;
     cursor: pointer;
   }
   
   .btn:hover {
-    background-color: #094920;
+    background-color: #f74e45;
     color: white;
   }
   

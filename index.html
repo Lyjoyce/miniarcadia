@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../miniarcadia/view/css/index.css">
+  <link rel="stylesheet" href="./view/css/index.css">
   <link rel="stylesheet" href="./view/pages.html/contact.html">
   <link rel="stylesheet" href="./view/css/gallery.css">
   <link rel="stylesheet" href="./view/css/login.css">
@@ -17,11 +17,12 @@
 
   <header>
     <nav class="topnav">
-      <img src="./asset/images/logo-arcadia/logo-max-arcadia.png" alt="logo arcadia" class="navlogo">
+      <img src="./asset/images/logo-arcadia/logo-min-arcadia.png" alt="logo arcadia" class="navlogo">
+    
       <a href="#home" class="active">Home</a>
       <a href="#notice">Avis</a>
-      <a href="./view/pages.html/contact.html">Contact</a>
-      <a href="./view/pages.html/login.html" class="split">Login</a>
+      <a href="http://127.0.0.1:3000/view/pages.html/contact.html">Contact</a>
+      <a href="http://127.0.0.1:3000/view/pages.html/login.html" class="split">Login</a>
     </nav>
 
     <div class="presentation">
@@ -36,27 +37,20 @@
   </header>
 
   <main>
-    <!--MDN SECTION GALLERY PICTURES-->
+    <!--FILTERS OF GALLERY PICTURES-->
     <div id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
       <button class="btn" onclick="filterSelection('animaux')"> Nos animaux</button>
       <button class="btn" onclick="filterSelection('habitats')"> Les habitats</button>
       <button class="btn" onclick="filterSelection('services')"> Nos services</button>
     </div>
-    <!-- Portfolio Gallery Grid -->
+    <!--GALLERY PICTURES -->
     <div class="row">
-
       <div class="column habitats">
         <div class="content">
-          <!-- MODELE MDN https://developer.mozilla.org/fr/docs/Web/HTML/Element/img
-             <img
-              class="fit-picture"
-              src="/media/cc0-images/grapefruit-slice-332-332.jpg"
-              alt="Grapefruit slice atop a pile of other slices" />
-            -->
           <img class="img-gal" src="./view/img/habitats/marais-habitat-jevgenij-voronov-YL5ZDmdDNEY-unsplash.jpg"
             alt="le marais">
-          <h4><a href="./view/pages.html/habitats.html" class="link-hab">Marais</a></h4>
+          <h4><a href="./view/pages.html/marais.html" class="link-hab">Marais</a></h4>
           <p>Animaux : Crocodile, Cygne, Flamant rose, Hippopotame
           </p>
         </div>
@@ -188,9 +182,8 @@
             pour les familles.
             Les clients louent la vaste sélection de bières belges
             et la qualité des frites.
-            Le restaurant est apprécié pour sa variété de thé et ses pâtisseries faites maison.
-            Des macarons délicats aux éclairs au chocolat,
-            chaque visite est une découverte gourmande.
+            Le restaurant est apprécié pour sa variété de thé et ses 
+            pâtisseries faites maison. Bonne dégustation.
           </p>
         </div>
       </div>
@@ -204,7 +197,7 @@
             Nous marcherons ensemble dans les allées ombragées du zoo,
             prêts à découvrir une variété fascinante d'animaux sauvages.
             Vous apprécierez de découvrir ces incroyables animaux originaires
-            des différents continents à travers mes descriptions. N'hésitez pas à poser vos questions.
+            des différents continents à travers mes descriptions.
           </p>
         </div>
       </div>
@@ -215,23 +208,24 @@
             alt="visiter le zoo en petit train" />
           <h4 id="petitTrain">Petit train</h4>
           <p>
-            Une option idéale pour découvrir
-            le parc de manière confortable et ludique, appréciée des familles. Le petit train parcourt les différentes
-            sections du zoo,
-            offrant aux visiteurs une vue d'ensemble des habitats et des animaux, sans se fatiguer.
+            Une option idéale pour découvrir le parc de manière confortable
+            et ludique, appréciée des familles. Vous parcourerez les différentes
+            sections du zoo sans vous fatiguer.
             Pendant la visite, des commentaires informatifs sont diffusés pour en apprendre davantage
             sur les espèces présentes et les efforts de conservation du zoo.
           </p>
         </div>
       </div>
-      <!-- END GRID, END GALLERY-->
+      <!--END GALLERY-->
     </div>
-    <!-- END MAIN -->
   </main>
+
+  <section>
+
+  </section>
   
   <!--THE FOOTER-->
   <footer>
-    <!-- Trigger/Open The Modal -->
     <button id="myPlanBtn">Plan</button>
     <!-- The Modal -->
     <div id="myPlanModal" class="plan_modal">
@@ -254,23 +248,9 @@
   <script src="./view/script.js/index.js"></script>
   <script src="./view/script.js/index_login.js"></script>
   <script src="./vieuw/script.js/contact.js"></script>
-  <script src="./view/script.js/notice.js"></script>
+  <!--<script src="./view/script.js/notice.js"></script>
   <script src="./view/script.js/footer.js"></script>
   <script src="./view/script.js/plan.js"></script>
-  <script src="./view/script.js/horaires.js"></script>
-
-  // When the user scrolls the page, execute myFunction
-  <script>
-    window.onscroll = function () { myFunction() };
-
-    function myFunction() {
-      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (winScroll / height) * 100;
-      document.getElementById("myBar").style.width = scrolled + "%";
-    }
-  </script>
-
+  <script src="./view/script.js/horaires.js"></script>-->
 </body>
-
 </html>

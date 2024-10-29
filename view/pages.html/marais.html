@@ -5,22 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="env_travail/workspace/miniarcadia/index.html">
+  <link rel="stylesheet" href="http://127.0.0.1:3000/index.html">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../pages.html/contact.html">
   <link rel="stylesheet" href="../css/gallery.css">
   <link rel="stylesheet" href="../css/login.css">
   <link rel="stylesheet" href="../css/footer.css">
-  <title>Miniarcadia</title>
+  <title>Marais</title>
 </head>
 
 <body>
 
-
   <header>
     <nav class="topnav">
       <img src="../img/logo-zoo-arcadia/logo-min-arcadia.png" alt="logo arcadia" class="navlogo">
-      <a href="#home" class="active">Home</a>
+      <a href="http://127.0.0.1:3000/index.html" class="active">Home</a>
       <a href="#notice">Avis</a>
       <a href="./view/pages.html/contact.html">Contact</a>
       <a href="./view/pages.html/login.html" class="split">Login</a>
@@ -36,54 +35,19 @@
   </header>
 
   <main>
-    <!--MDN SECTION GALLERY PICTURES-->
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('animaux')"> Nos animaux</button>
-      <button class="btn" onclick="filterSelection('habitats')"> Les habitats</button>
-      <button class="btn" onclick="filterSelection('services')"> Nos services</button>
-    </div>
-    <!-- Portfolio Gallery Grid -->
-    <div class="row">
 
+    <div class="row">
       <div class="column habitats">
         <div class="content">
-
-          <!-- MODELE MDN https://developer.mozilla.org/fr/docs/Web/HTML/Element/img
-           <img
-            class="fit-picture"
-            src="/media/cc0-images/grapefruit-slice-332-332.jpg"
-            alt="Grapefruit slice atop a pile of other slices" />
-          -->
           <img class="img-gal" src="../img/les habitats/marais-habitat-jevgenij-voronov-YL5ZDmdDNEY-unsplash.jpg"
             alt="le marais" />
           <h4><a href="./view/html/marais.html" class="link-hab">Marais</a></h4>
           <p>Animaux : Crocodile, Cygne, Flamant rose, Hippopotame
           </p>
-
         </div>
       </div>
-      <div class="column habitats">
-        <div class="content">
-          <img class="img-gal" src="../img/les habitats/savane-habitat-david-clode-92MgFhlWD-8-unsplash.jpg"
-            alt="la savane" />
-          <h4><a href="./view/html/savane.html" class="link-hab">Savane</a></h4>
-          <p>
-            Animaux : Girafes, Guépards, Lions, Rhinocéros</p>
-
-        </div>
-      </div>
-      <div class="column habitats">
-        <div class="content">
-          <img class="img-gal" src="./asset/images/les habitats/jungle-habitat.jpg" alt="la jungle" />
-          <h4><a href="./asset/images/les habitats/jungle-habitat.jpg" class="link-hab">Jungle</a></h4>
-          <p>
-            Animaux : Ours brun, Panda géant, Panda roux, Tigre jaune
-          </p>
-
-        </div>
-      </div>
-
+      
+      
       <div class="column animaux">
         <div class="content">
           <img class="img-gal" src="../img/marais/crocodile-glen-carrie-RIQjCqmcGNw-unsplash.jpg"
@@ -92,7 +56,6 @@
           <p></p>
         </div>
       </div>
-
       <div class="column animaux">
         <div class="content">
           <img class="img-gal" src="../img/marais/marais-cygne-nick-fewings-LdIEDdBhBoY-unsplash.jpg"
@@ -101,7 +64,6 @@
           <p></p>
         </div>
       </div>
-
       <div class="column animaux">
         <div class="content">
           <img class="img-gal" src="./asset/images/marais/marais-hippopotame-jonathan-gohner-qxVxn-Mp8f4-unsplash.jpg"
@@ -120,8 +82,6 @@
         </div>
       </div>
 
-      <div class="jungle-main">
-
         <!-- Portfolio Gallery Grid -->
         <div class="jungle-row">
           <div class="jungle-column">
@@ -132,11 +92,10 @@
                 <div>
                 </div>
                 <h3>Crocodile</h3>
-                <p>Le crocodile est un reptile qui possède une grande gueule et de puissantes mâchoires. C’est un
-                  redoutable animal qui peut atteindre plus de 7 mètres de longueur. Son corps est moins court que
-                  sa queue.
+                <p>Le crocodile est un reptile qui possède une grande gueule, de puissantes mâchoires 
+                  et peut atteindre plus de 7 mètres de long. 
                   Chacune de ses 4 pattes comporte 4 doigts, et ceux de ses pattes arrière sont réunis par une
-                  membrane facilitant la nage (comme ceux des canards).
+                  membrane facilitant la nage.
                   Son corps est recouvert d’écailles cornées sur son dos.
                   Les crocodiles vivent dans les marais et dans les cours d’eau des différentes
                   régions intertropicales. Ils savent bien nager.
@@ -177,28 +136,18 @@
                   <div></div>
                 </div>
                 <h3>Flamant rose</h3>
-                <p>les Flamants roses de la région Caraïbe et ceux de l'ancien monde sont maintenant
-                  (depuis 2002) acceptés comme deux espèces à part entière, le Flamant rose (Phœnicopterus roseus)
-                  en Afrique,
-                  Europe et Asie et le Flamant des Caraïbes en Amérique.
-                  Cet oiseau est une véritable curiosité de l'avifaune européenne avec une
-                  silhouette et des colorations uniques sur le continent : c'est la seule espèce
+                <p>
+                  Cet oiseau est la seule espèce
                   de phœnicoptéridé (famille des flamants) représentée en Europe.
-                  Seules la France et l'Espagne hébergent des colonies nicheuses en Europe.
-                  La femelle est plus petite que le mâle. L'espèce ne peut être confondue :
-                  l'oiseau posé présente un corps entièrement rose clair, de longues pattes roses palmées,
+                  L'oiseau présente un corps entièrement rose clair, de longues pattes roses palmées,
                   un bec court et recourbé, à pointe noire.
                   Le Flamant rose a un régime alimentaire très spécialisé qui le rend très vulnérable en cas de
                   non disponibilité de la ressource (par exemple lors d'hivers rigoureux).
-
-                  Flamant roseadulteIl filtre l'eau des lagunes et étangs saumâtres
-                  grâce à un bec spécialisé (système de "peignes") : il capture une espèce
-                  de crevette appelée Artemia salina. Cette dernière (notamment) est à l'origine de la
-                  couleur rose du flamant mais aussi de la coloration des salins à une certaine période de
-                  l'année. Artemia salina contient des pigments kéto-caroténoïdes. Notre unique phœnicoptéridé
-                  français consomme aussi d'autres invertébrés et végétaux aquatiques. Une adaptation toute
-                  particulière au bec lui permet d'évacuer
-                  le sel contenu dans l'eau qui y transite.
+                   Il capture une espèce de crevette appelée Artemia salina. 
+                   Cette dernière (notamment) est à l'origine de la
+                  couleur rose du flamant. 
+                  Artemia salina contient des pigments kéto-caroténoïdes. Notre unique phœnicoptéridé
+                  français consomme aussi d'autres invertébrés et végétaux aquatiques. 
                 </p>
               </div>
             </div>
@@ -221,37 +170,28 @@
             </div>
           </div>
         </div>
+  </main>
+  <!--THE FOOTER-->
+  <footer>
+    <button id="myPlanBtn"><a href="/asset/images/map-arcadia/Zoo_Arcadia_Forêtde_Broceliande.png" alt="map">
+    </a>Plan</button>
+    
+    <button id="myHorairesBtn">Horaires</button>
 
-        <script>
-          filterSelection("all")
-          function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("column");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-              w3RemoveClass(x[i], "show");
-              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
-          }
+    <a href="https://www.instagram.com/mini_arcadia" class="footer-links">Nous retouver sur Instagram</a>
+    <!--JS FETCH
+    <p id="copyright">Fetch a file to change this text.</p>-->
+    <a href="" class="footer-links">Copyright</a>
 
-          function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-              if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-            }
-          }
+  </footer>
 
-          function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < script arr2.length; i++) {
-              while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
-              }
-            }
-            element.className = arr1.join(" ");
-          }
-        </script>
+  <script src="./view/script.js/index.js"></script>
+  <script src="./view/script.js/index_login.js"></script>
+  <script src="./vieuw/script.js/contact.js"></script>
+  <!--<script src="./view/script.js/notice.js"></script>
+  <script src="./view/script.js/footer.js"></script>
+  <script src="./view/script.js/plan.js"></script>
+  <script src="./view/script.js/horaires.js"></script>-->
+
+</body>
+</html>
