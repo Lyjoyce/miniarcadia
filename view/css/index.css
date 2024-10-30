@@ -108,7 +108,7 @@ body{
 }
 .topnav a:hover {
   background-color:#F74E45 ;
-  color: white ;
+  color: black ;
   font-weight: bold;
 }
 .topnav a.split {
