@@ -4,16 +4,17 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #094920;
-    box-shadow: unset 2px -2px 0px #348910;
     text-align: center;
     display: flex;
     flex-direction:row;
-    justify-content:space-around ;
+    justify-content:space-evenly  ;
     padding: 5px;
+    box-shadow: inset 2px 2px #54F790 ;
  }
  .footer-links{
    text-decoration: none;
    color: white;
+   font-size: medium;
  }
 
  /* The Modal (background) */

@@ -1,4 +1,19 @@
-const form = document.querySelector('form');
+function loginUser(){
+    const username= document.getElementById("login-username").value
+    const password= document.getElementById("login-password").value
+
+    const storedUsername=localStorage.getItem("username")
+    const storedPassword=localStorage.getItem("password")
+
+    if(username===storedUsername && password===storedPassword){
+        localStorage.setItem("isAuthenticated", true)
+        window.location.href="index.html"
+    }else{
+        alert("nom d'utilisateur ou mot de pass incorrect")
+    }
+}
+
+/*const form = document.querySelector('form');
 
 // Ajout d'un écouteur d'événement sur le formulaire pour écouter le submit
 form.addEventListener("submit", (event) => {
@@ -14,7 +29,7 @@ form.addEventListener("submit", (event) => {
         console.log('Le champ nom est rempli');
     }
 });
-
+*/
 //Pour vérifier la valeur d’un champ à la saisie, le principe est le même. Nous allons écouter un événement. Deux types d'événements sont possibles dans ce cas :
 
 //l’événement input : il se déclenche à chaque fois que l’utilisateur tape une lettre dans le champ ;

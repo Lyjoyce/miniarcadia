@@ -26,62 +26,41 @@
     <div class="presentation">
       <div>
         <h1>Se connecter</h1>
-        <h2>Bonne journée</h2>
       </div>
     </div>
   </header>
 
-  <form action="action_page.php" method="post">
-
-
-    <div class="modal-content">
-      <!-- champ nom -->
+  <form action="" method="post" class="form">
+    <div>
       <label for="username">Username</label>
       <input type="text" id="username" placeholder="Enter Username" name="username" required>
-        <!-- champ email -->
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
     
       <label for="psw">Password</label>
       <input type="password" id="password" placeholder="Enter Password" name="psw" required>
-      <button type="submit" class="loginbtn">Login</button>
+      <button href="" type="submit" class="loginbtn">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
-
-    <div class="container">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+    
+      <div class="login-forgot">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
   </form>
 
-  <!--THE FOOTER-->
   <footer class="footer">
-
-    <!-- Trigger/Open The Modal -->
     <button id="myPlanBtn">Plan</button>
-
-    <!-- The Modal -->
     <div id="myPlanModal" class="plan_modal">
-
-      <!-- Modal content-->
       <div class="plan-modal-content">
         <span class="planclose">&times;</span>
         <img src="assets/images/zoo-arcadia/Zoo_Arcadia_Forêtde_Broceliande.png" alt="map">
       </div>
-
     </div>
-
-    <!--commentaireTrigger/Open The Modal -->
     <button id="myHorairesBtn">Horaires</button>
-
     <a href="https://www.instagram.com/mini_arcadia" class="footer-links">Nous retouver sur Instagram</a>
-
-    <!--JS FETCH
-    <p id="copyright">Fetch a file to change this text.</p>-->
     <a href="" class="footer-links">Copyright</a>
-
   </footer>
 
 </body>

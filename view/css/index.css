@@ -71,15 +71,13 @@
     visibility: hidden;
   }
 }
-
 */
 body{
   font-family:'Roboto Flex, Montserrat, sans serif';
   background-color: #3D4D43;
   color: white;
   padding: 20px;
-}
-
+} 
 .topnav {
   background-color: #094920;
   overflow: hidden;
@@ -91,6 +89,7 @@ body{
   width: 100px;
   border-radius: 4px;
   border: solid #094920 1px;
+  box-shadow: 2px 2px 2px 2px black;
   margin-left: 25%;
 }
 .topnav a {
@@ -103,30 +102,27 @@ body{
   line-height: 25px;
   border-radius: 4px;
 }
-.topnav a.active {
+.topnav .active {
   background-color: #54F790;
   color: black;
 }
-
-
 .topnav a:hover {
-  background-color: #54F790;
-  color: black;
+  background-color:#F74E45 ;
+  color: white ;
+  font-weight: bold;
 }
-
 .topnav a.split {
   float: right;
   color: white;
 }
 .topnav a.split:hover{
   background-color: white;
-  text-decoration: overline 4px #FC736D;
+  border: solid 6px #F74E45;
   color: black;
 }
 .logo{
   width: 20%;
 }
-/* main GALLERY */
 .nav {
   overflow: hidden;
   background-color: white;
@@ -136,8 +132,6 @@ body{
   align-items: center;
   justify-content: space-around;
 }
-
-/* Style Phrase d'accroche et de présentation*/
 .presentation{
   display: flex;
   align-items: center;
@@ -151,7 +145,6 @@ h1{
   box-shadow: 2px 4px #54F790;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
 
   .logo{

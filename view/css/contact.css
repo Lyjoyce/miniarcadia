@@ -1,65 +1,56 @@
 /* FORM*/
 #more {display: none;}
-/*home page*/
-.notice{
-  padding: 5px;
-  margin-bottom: 10px;
+.form-body{
+  font-family: "Roboto Flex", "Montserrat", sans-serif;
+  margin: 0 10px;
+  background-color: #6da281;
+  color: black;
+  padding: 0px 10px;
 }
-
 .form-link{
   color: black;
   text-decoration: none;
   margin-left: 10px;
 }
-
-/* page*/
-.body-form{
-  background-color: #6da281;
-}
 .arrowleft{
   width: 25px;
-}
-.form-visit{
-  margin-top: 10px;
-  padding: 10px;
-  color: white;
-  
 }
 .presentation{
     display: flex;
     justify-content: center;
     margin-left: 10%;
+    margin-bottom: 20px;
 }
 .logo{
     width: 100px;
 }
-
-/* Style inputs */
-
+  label{
+    font-size: 18px;
+  }
   input[type=email], input[type=text], textarea {
    width: 100%;
    padding: 12px 20px;
    margin: 8px 0;
    display: inline-block;
-   border: 1px solid #3d4d43;
+   border: 3px solid #3d4d43;
    border-radius: 4px;
    box-sizing: border-box;
   }
-
-  /* Style the submit button */
   input[type=submit] {
     width: 100%;
     background-color: #094920;
     color: white;
+    font-weight: bold;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
+    margin-bottom: 50px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
-  
-  /* Add a background color to the submit button on mouse-over */
   input[type=submit]:hover {
-    background-color: #54F790;
+    background-color: #f74e45;
     color: black;
+    font-size: 18px;
+    font-weight: bolder;
   }
