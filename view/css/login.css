@@ -5,7 +5,6 @@
   background-color: #6da281;
   color: black;
   padding: 0px 10px;
-  font-size: large;
 }
 .arrowleft{
   width: 25px;
@@ -15,6 +14,9 @@
   justify-content: center;
 }
 .form{
+  background-color: #094920;
+  color: white;
+  padding: 20px;
   margin-bottom: 70px;
 }
 label{
@@ -33,7 +35,8 @@ input[type=text], input[type=email], input[type=password], textarea {
   .loginbtn{
   background-color: #f74e45;
   color: black;
-  font-size: medium;
+  font-size: large;
+  font-weight: bold;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -43,13 +46,14 @@ input[type=text], input[type=email], input[type=password], textarea {
  .login-forgot{
   display: flex;
   justify-content: flex-end;
-  padding: 0px;
  }
-.psw:hover{
+.psw:hover, a:hover{
   background-color: #f74e45;
-  margin-bottom: 50px;
+  color: black;
+  padding: 10px;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
+
