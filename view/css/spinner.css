@@ -1,0 +1,55 @@
+.spinner {
+    height: 100%;
+    background: #094920;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    animation: spinner 2s linear;
+    visibility: hidden;
+  }
+  .spinner-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: spinner-border 2s linear;
+    z-index: 10;
+    visibility: hidden;
+  }
+  
+  @keyframes spinner {
+    0% {
+      visibility: visible;
+      opacity: 0.9;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @keyframes spinner-border {
+    0% {
+      visibility: visible;
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+     transform: rotate(360deg);
+     opacity: 0;
+     visibility: hidden;
+    }
+  }
