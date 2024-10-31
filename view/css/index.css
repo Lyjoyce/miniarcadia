@@ -25,6 +25,11 @@
   animation-delay: 2s;
   animation-fill-mode: backwards;
 }
+animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+  /*
 @keyframes spinner-border {
   0% {
     visibility: visible;

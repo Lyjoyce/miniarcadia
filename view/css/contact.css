@@ -57,3 +57,9 @@
     color: black;
     font-weight: bolder;
   }
+
+  @media screen and (max-width: 400px){
+    input[type=submit]{
+      font-size: medium;
+    }
+  }

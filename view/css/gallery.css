@@ -48,7 +48,7 @@
   }
   .btn:hover {
     background-color: #f74e45;
-    color: white;
+    color: black;
     font-weight: bolder;
   }
   .btn.active {
@@ -56,21 +56,11 @@
     color: white;
   }
 
-  .link-hab{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  .link-hab:hover{
-   background-color: #f74e45;
-   color: black;
-  }
   h4:hover{
    background-color: #f74e45;
    color: black;
-   padding: 2px;
+   padding: 3px;
   }
-
   @media screen and (max-width: 500px){
 
     .row,

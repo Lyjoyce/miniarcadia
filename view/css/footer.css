@@ -17,8 +17,7 @@ footer {
    font-size: medium;
  }
 
- /* The Modal (background) */
-.plan_modal {
+ .map-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -31,27 +30,30 @@ footer {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
-.plan-modal-content {
-  background-color: #fefefe;
+.modal-content {
+  background-color: azure;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #54F790;
   width: 80%; /* Could be more or less, depending on screen size */
 }
-
-/* The Close Button */
-.close {
-  color: #aaa;
+.map-close {
+  color: #F74E45;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
+.map-close:hover,
+.map-close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 400px){
+  .footer-links{
+    font-size: small;
+  }
 }
  
