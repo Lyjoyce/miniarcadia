@@ -50,8 +50,10 @@ footer {
   cursor: pointer;
 }
 
-
 @media screen and (max-width: 400px){
+  .map-size{
+    width: 100%;
+  }
   .footer-links{
     font-size: small;
   }
