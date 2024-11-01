@@ -1,50 +1,56 @@
-.animal-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 16px;
-    padding: 0 8px;
+
+h2:hover {
+    background-color: #F74E45;
+    color: black;
   }
-.animal-picture{
-    width: 100%;
+.split {
+  height: 150%;
+  width: 50%;
+  position: FIXED;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-  @media screen and (max-width: 650px) {
-    .animal-column {
-      width: 100%;
-      display: block;
-    }
+.left {
+  left: 0;
+  background-color: #094920;
+  top: -30%;
+  font-size: large;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 200px;
+  border-radius: 5%;
+  box-shadow: 2px 2px 4px 0 white;
+}
+.right {
+  right: 0;
+  background-color: azure;
+  color: black;
+ font-size:large;
+}
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+}
+@media screen and (max-width : 400px) {
+  .animal-health{
+    font-size:small;
+    margin-left: 25px;
   }
-  
-  .animal-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .left{
+    top:-40%;
   }
-  
-  .animal-container {
-    padding: 0 16px;
+  .right{
+    font-size: medium;
   }
-  
-  .animal-container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .animal-title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
+}
