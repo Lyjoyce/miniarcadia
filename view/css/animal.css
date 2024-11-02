@@ -1,28 +1,40 @@
 
+body{
+  position: absolute;
+  width: 100%; 
+  margin: 0;
+  padding: 0 5px;
+}
+.animal-header{
+  font-size: large;
+}
+main{
+  position: absolute; 
+  display: flex;
+  flex-direction: row;
+  
+ } 
 h2:hover {
     background-color: #F74E45;
     color: black;
   }
 .split {
-  height: 150%;
   width: 50%;
-  position: FIXED;
-  z-index: 1;
-  top: 0;
+  position:relative;
+  z-index: 0;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 .left {
   left: 0;
   background-color: #094920;
-  top: -30%;
   font-size: large;
 }
 .centered {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   text-align: center;
 }
 .centered img {
@@ -42,15 +54,26 @@ h2:hover {
   justify-content: center;
   padding: 0 10px;
 }
-@media screen and (max-width : 400px) {
+@media screen and (max-width : 600px){
   .animal-health{
     font-size:small;
-    margin-left: 25px;
   }
   .left{
-    top:-40%;
+    top:-0%;
   }
   .right{
-    font-size: medium;
+    font-size: small;
+  }
+
+}
+@media screen and (max-width : 400px) {
+  .animal-health{
+    font-size:x-small;
+  }
+  .left{
+    top:0%;
+  }
+  .right{
+    font-size: x-small;
   }
 }
